@@ -35,7 +35,7 @@ const socket = io.connect();
                 const message = $('#txt-message').val();
                 $('#list-message').append(`<li class="right-align"><p class="message me">${message}</p> Me</li>`);
                 socket.emit('CLIENT_SEND_MESSAGE', { username, roomName, message }); //emit obj{username, room name, message} to server
-                $('#message-panel').scrollTop($('#message-panel').height());
+                $('#message-panel').scrollTop($('#list-message').height());
                 $('#txt-message').val('');
             });
 
@@ -43,7 +43,7 @@ const socket = io.connect();
             socket.on('GOT_CLIENT_MWSSAGE', msg => {
                 const { username, message } = msg;
                 $('#list-message').append(`<li class="left-align"><p class="message you"><b>${username}:</b> ${message}</p></li>`);
-                $('#message-panel').scrollTop($('#message-panel').height());
+                $('#message-panel').scrollTop($('#list-message').height());
             })
 
         });
