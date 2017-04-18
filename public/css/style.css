@@ -1,0 +1,166 @@
+.top-bar {
+    display: block;
+}
+.top-bar .topbar-content {
+    display: block;
+    margin: 0;
+    text-align: center;
+}
+
+.top-bar .topbar-content .title{
+    font-size: 12px;
+    line-height: 5px;
+}
+
+.browser-window .circles {
+    float: left;
+    margin: 4px 12px;
+}
+
+#navbar-panel {
+    font-size: 110%;
+    font-weight: 400;
+    border-bottom: 1px solid #e1e1e1;
+    height: 42px;
+    line-height: 11px;
+}
+
+#navigation-panel {
+    background-color: #90a4ae;
+    height: auto;
+    padding: 0px;
+    font-size: 110%;
+    font-weight: 400;
+}
+
+#right-content {
+    background-color: #f4f2f2;
+    height: 450px;
+    padding: 0px;
+}
+
+#message-panel {
+    width: 100%;
+    height: 340px;
+    position: relative;
+    border-bottom: 1px solid #e1e1e1;
+    overflow: auto;
+}
+
+#input-panel {
+    width: 100%;
+    padding: 0px;
+}
+.btn-send {
+    margin-top: 20px;
+}
+
+.item-group {
+    
+}
+.item-group .elem {
+    color: #fff;
+    background-color: #90a4ae;
+    line-height: 1.4rem;
+    padding: 10px 20px;
+    margin: 0;
+    display: block;
+    transition: .25s;
+    cursor: pointer;
+    font-weight: 100;
+}
+.item-group .elem:hover {
+    color: #fff;
+    background-color: #788991;
+}
+
+.item-group .elem.active {
+    color: #fff;
+    background-color: #485358;
+}
+
+ul.topbar-menu {
+    padding-left: 0;
+    list-style-type: none;
+}
+
+ul.topbar-menu li {
+    float: left;
+}
+
+ul.topbar-menu li a {
+    display: block;
+    color: rgba(0,0,0,0.71);
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+    line-height: 5px;
+}
+
+ul.topbar-menu li a:hover {
+    background-color: #111111;
+}
+
+.list-title {
+    width: 100%;
+    display: block;
+    color: rgba(0,0,0,0.71);
+    text-decoration: none;
+    font-size: 150%;
+    line-height: 5px;
+    padding: 0 20px;
+    margin-top: 20px;
+}
+
+#room-at {
+    text-align: center;
+}
+
+.from-login {
+    width: 500px;
+    height: auto;
+    padding: 20px;
+    margin: 0px auto;
+}
+
+#list-message li {
+    width: 100%;
+}
+
+.message {
+    display: inline-block;
+    height: 32px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0,0,0,0.6);
+    line-height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    margin-bottom: 5px;
+    margin-right: 5px;
+}
+.message.you {
+    background-color: #f06292;
+    clear: left;
+}
+.message.me {
+    background-color: #26a69a;
+    clear: right;
+}
+
+@media (min-width: 999px) {
+    .browser-window .circles {
+        float: left;
+        margin: 3px 12px;
+    }
+}
+
+@media (min-width: 600px) {
+    #navigation-panel {
+        background-color: #90a4ae;
+        height: 450px;
+        padding: 0px;
+        font-size: 110%;
+        font-weight: 400;
+    }
+}
